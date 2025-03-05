@@ -1,0 +1,5 @@
+name: LogSystem
+version: '1.0-SNAPSHOT'
+main: LogSystem.logSystem.LogSystem
+api-version: '1.20'
+depend: [MMOItems, Vault, MongoLibraryPlugin, BinggreAPI, BinggreEconomy, MMOCore, MythicLib, Merge, Upgrade]
