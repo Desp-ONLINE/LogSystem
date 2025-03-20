@@ -8,6 +8,7 @@ import LogSystem.logSystem.dto.MergeLogDto;
 import LogSystem.logSystem.dto.MonsterKillLogDto;
 import LogSystem.logSystem.dto.UpgradeDto;
 import LogSystem.logSystem.dto.UserLogDto;
+import LogSystem.logSystem.listener.MergeListener;
 import LogSystem.logSystem.listener.MonsterListener;
 import LogSystem.logSystem.listener.PlayerListener;
 import LogSystem.logSystem.listener.UpgradeListener;
@@ -15,7 +16,6 @@ import java.util.HashMap;
 import java.util.Map;
 import lombok.Getter;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.desp.merge.listener.MergeListener;
 
 public final class LogSystem extends JavaPlugin {
 
