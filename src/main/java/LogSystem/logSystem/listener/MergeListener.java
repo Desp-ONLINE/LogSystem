@@ -5,9 +5,9 @@ import static LogSystem.logSystem.utils.LogSystemUtils.loadUsedMaterials;
 
 import LogSystem.logSystem.database.repository.MergeLogRepository;
 import LogSystem.logSystem.dto.MergeLogDto;
-import java.net.http.WebSocket.Listener;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
 import org.desp.merge.event.MergeFailEvent;
 import org.desp.merge.event.MergeSuccessEvent;
 
