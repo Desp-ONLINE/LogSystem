@@ -10,5 +10,5 @@ import lombok.Setter;
 public class MonsterKillLogDto {
     private String user_id;
     private String uuid;
-    private Map<String, Integer> kills;
+    private Integer kills;
 }

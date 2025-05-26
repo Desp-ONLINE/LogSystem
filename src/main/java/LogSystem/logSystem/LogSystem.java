@@ -37,7 +37,7 @@ public final class LogSystem extends JavaPlugin {
 
         this.getServer().getPluginManager().registerEvents(new PlayerListener(), this);
         this.getServer().getPluginManager().registerEvents(new MergeListener(), this);
-        this.getServer().getPluginManager().registerEvents(new MonsterListener(), this);
+//        this.getServer().getPluginManager().registerEvents(new MonsterListener(), this);
         this.getServer().getPluginManager().registerEvents(new UpgradeListener(), this);
     }
 
@@ -47,7 +47,7 @@ public final class LogSystem extends JavaPlugin {
 
     private void register() {
         mergeLogMap = new MergeLogRepository().getMergeLog();
-        monsterKillLogMap = new MonsterKillLogRepository().getMonsterKillLog();
+//        monsterKillLogMap = new MonsterKillLogRepository().loadMonsterKillLog();
         upgradeLogMap = new UpgradeLogRepository().getUpgradeLog();
         userLogMap = new UserLogRepository().getUserLog();
     }
