@@ -4,9 +4,11 @@ import LogSystem.logSystem.database.DatabaseRegister;
 import LogSystem.logSystem.dto.MergeLogDto;
 import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;
+import com.mongodb.client.model.Filters;
 import java.util.HashMap;
 import java.util.Map;
 import org.bson.Document;
+import org.bukkit.entity.Player;
 
 public class MergeLogRepository {
 
@@ -49,5 +51,13 @@ public class MergeLogRepository {
                 .append("created_at", currentTime);
 
         mergeLog.insertOne(document);
+    }
+
+    public static boolean isPlayerFirstMerge(Player player) {
+        String uuid = player.getUniqueId().toString();
+
+        Document document = mergeLog.find(Filters.eq("uuid", uuid)).first();
+
+        return document == null;
     }
 }
